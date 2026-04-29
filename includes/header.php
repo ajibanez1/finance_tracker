@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finance Tracker</title>
+    <title>FinTrack</title>
 
     <link rel="stylesheet" href="css/styles.css">
 
@@ -28,6 +28,7 @@
             <ul>
                 <?php if ($logged_in): ?>
                     <li><a href="index.php">Dashboard</a></li>
+                    <li><a href="add_account.php">Add Account</a></li>
                     <li class="nav-user">
                         <button class="nav-user-btn" onclick="toggleDropdown(event)">
                             <div class="nav-avatar">
@@ -53,6 +54,7 @@
                     </li>
                 <?php else: ?>
                     <li><a href="login.php">Log In</a></li>
+                    <li><a href="register.php">Register</a></li>
                 <?php endif; ?>
             </ul>
         </nav>
