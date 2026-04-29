@@ -2,7 +2,6 @@
     require_once 'includes/database-connection.php';
     require_once 'includes/session.php';
 
-    // Already logged in — go to dashboard
     if ($logged_in) {
         header('Location: index.php');
         exit;
